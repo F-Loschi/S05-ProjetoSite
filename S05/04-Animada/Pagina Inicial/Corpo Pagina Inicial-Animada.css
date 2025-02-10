@@ -1,0 +1,153 @@
+:root {
+    --cor-click: #126ae2; /* Cor de click */
+    --cor-sombra: #EFECED; /* Azul escuro */
+    --cor-text: black; /* Preto */
+    --cor-back1: #edf2f4; /* Azul claro */
+    --cor-back2: white; /* Verde suave */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-back1);
+    height: 100vh;
+  /*Mexe na cor do fundão*/
+}
+
+@import url(https://fonts.googleapis.com/css?family=Arimo);
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    background-color: var(--cor-back2);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+  /*Mexe na cor do fundo*/
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--cor-sombra);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+#logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.svg_logo {
+    width: 80px;
+}
+
+.menu-icon, .profile-icon {
+    font-size: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.path_logo {
+    fill: var(--cor-click);
+  /*Mexe na cor do logo do Inatel*/
+}
+
+.material-symbols-outlined {
+    font-size: 24px;
+    color: var(--cor-click);
+  /*Mexe na cor dos ícones*/
+}
+
+.welcome {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.option-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: var(--cor-sombra);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /*Aqui é das três primeiras boxes com os ícones de not, e-m, aul*/
+}
+
+.classes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.class-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: var(--cor-sombra);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    font-size: 16px;
+    text-align: center;
+    /*Aqui mexe na cor das boxes de aula*/
+}
+
+#menu_aba, #profile_aba {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    background-color: var(--cor-back2);
+    overflow-x: hidden;
+    transition: 0.6s;
+    z-index: 1;
+  /*Mexe na cor das abas*/
+}
+
+#menu_aba {
+    left: 0;
+}
+
+#profile_aba {
+    right: 0;
+}
+
+#menu_bot, #profile_bot {
+    padding: 20px;
+    /*cursor: pointer;*/
+    font-family: "Arimo", sans-serif;
+    font-size: 14pt;
+    color: var(--cor-click);
+    display: block;
+    /*Mexe na cor da fonte da aba*/
+}
+
+.close-btn {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--cor-click);
+    cursor: pointer;
+    padding: 10px;
+    display: block;
+    text-align: right;
+    /*Mexe na cor do ícone de fechar a barra lateral*/
+}
